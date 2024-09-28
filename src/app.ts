@@ -1,7 +1,6 @@
 import express from 'express';
 import { createServer } from 'node:http';
 import {Server} from 'socket.io';
-import cors from 'cors';
 import {randomUUID} from "node:crypto";
 
 // Определяем интерфейс для пользователя
@@ -29,7 +28,7 @@ const server = createServer(app);
 
 const socket = new Server(server,{
     cors: {
-        origin: "http://localhost:5173"
+        origin: ["http://localhost:5173" ,'https://chat-socket-io-front-ten.vercel.app/']
     }
 });
 

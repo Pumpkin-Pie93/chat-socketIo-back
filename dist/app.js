@@ -16,7 +16,7 @@ const app = (0, express_1.default)();
 const server = (0, node_http_1.createServer)(app);
 const socket = new socket_io_1.Server(server, {
     cors: {
-        origin: "http://localhost:5173"
+        origin: ["http://localhost:5173", 'https://chat-socket-io-front-ten.vercel.app/']
     }
 });
 const messages = [
