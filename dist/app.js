@@ -60,8 +60,10 @@ socket.on("connection", (socketChannel) => {
     socketChannel.emit('init-messages-published', messages);
     console.log('Polina connected');
 });
-const PORT = process.env.PORT || 3009;
-server.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
+//
+//  const PORT = process.env.PORT || 3009
+//
+// server.listen(PORT, () => {
+//     console.log(`Server running at http://localhost:${PORT}`);
+// });
 //# sourceMappingURL=app.js.map
