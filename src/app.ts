@@ -82,9 +82,9 @@ socket.on("connection", (socketChannel) => {
 
     console.log('Polina connected');
 });
-//
-//  const PORT = process.env.PORT || 3009
-//
-// server.listen(PORT, () => {
-//     console.log(`Server running at http://localhost:${PORT}`);
-// });
+
+ const PORT = process.env.PORT || 3009
+
+server.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
