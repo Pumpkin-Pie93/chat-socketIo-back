@@ -1,4 +1,7 @@
 {
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/app.js" }
+  ],
   "version": 2,
   "name": "express-chat-back",
   "builds": [
@@ -14,3 +17,4 @@
     }
   ]
 }
+
